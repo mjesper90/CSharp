@@ -67,4 +67,18 @@ for(int x = 0; x < 5; x++){
     }
 }
 
+//Loops can also make use of break/continue
+int infiniteCounter = 10;
+while(true){
+    infiniteCounter--;
+    if(infiniteCounter%2 == 0){ //Modulo 2 to only print even numbers
+        Console.WriteLine(infiniteCounter);
+    }else{
+        continue; //Go to next iteration of the while-loop
+    }
+    if(infiniteCounter < 0){
+        break; //Break out of while-loop
+    }
+}
+
 #endregion

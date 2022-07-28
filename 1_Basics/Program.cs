@@ -1,10 +1,10 @@
-﻿/* Todays assignment
+﻿#region Assignment; Write your own story
+
+/* Todays assignment
 *   Write a short story using the Console for input and output
 *   Try to make use of as many of the below techniques as possible
 *   Create a commit and push it to Github!
 */
-
-#region Write own story
 
 //Console.WriteLine("...");
 //Console.ReadLine();
@@ -34,6 +34,7 @@ Console.WriteLine("Aaah, welcome " + myString + ", nice to meet you!");
 #endregion
 
 #region Data types
+
 Console.WriteLine("Do you want to learn about the simplest data types?");
 /*
 * The four main basic types we we will work with in the beginning are:

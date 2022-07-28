@@ -17,7 +17,7 @@ class Car{
 
     #endregion
 
-    #region Constructor
+    #region Constructors
 
     public Car(string brandParamater){
         this.Brand = brandParamater;
@@ -97,11 +97,3 @@ class Tire{
 
 #endregion
 
-#region Assignment
-
-//Create a CarDealer-Class
-//The CarDealer must have a list of cars for sale created via its constructor
-//The CarDealer must be have public Buy/Sell methods
-//Modify the classes in the this file as you see fit
-
-#endregion
