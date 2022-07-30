@@ -1,4 +1,4 @@
-﻿public class Animal  // Base class (parent) 
+﻿public abstract class Animal  
 {
     public virtual void PlayAnimalSound() 
     {

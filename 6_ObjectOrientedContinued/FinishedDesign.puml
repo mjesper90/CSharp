@@ -1,0 +1,54 @@
+@startuml
+
+class Animal {
+    void : PlayAnimalSound() 
+}
+
+class Dog {
+   
+}
+
+class Pig {
+   
+}
+
+class FriendlyAnimal {
+
+}
+
+class HostileAnimal {
+
+}
+
+class Lion {
+
+}
+
+Class Alligator {
+
+}
+
+FriendlyAnimal -up-|> Animal
+FriendlyAnimal -up-|> FriendlyAnimalInterface
+Dog -up-|> FriendlyAnimal
+Pig -up-|> FriendlyAnimal
+
+HostileAnimal -up-|> Animal
+HostileAnimal -up-|> HostileAnimalInterface
+Lion -up-|> HostileAnimal
+Alligator -up-|> HostileAnimal
+
+
+
+interface FriendlyAnimalInterface {
+    void : Pet()
+    void : Feed()
+}
+
+interface HostileAnimalInterface {
+    void : Fight()
+    bool : Scare()
+}
+
+@enduml
+
