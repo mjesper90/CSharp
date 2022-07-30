@@ -1,26 +1,53 @@
 ﻿#region Conditions; if, else if, else
 
-if(2 > 5)
+Console.WriteLine("Look at the source code to learn more about conditionals!");
+string StringInputFromConsole = Console.ReadLine();
+
+bool BooleanInput = false;
+if(StringInputFromConsole == "haps")
 {
-    Console.WriteLine("2 was bigger than 5");
+  BooleanInput = true;
 }
-else if(2+2 == 5)
+
+if(BooleanInput == true)
 {
-    Console.WriteLine("2+2 was equal to 5");
-}
-else if(4 != 4)
-{
-    Console.WriteLine("4 is NOT equal to 4");
+  Console.WriteLine("Conditions are easy!"); 
 }
 else
 {
-    if(2*2 == 5){
-        Console.WriteLine("2 times 2 is 5");    
-    }
-    //else if(...)
-
-    Console.WriteLine("Conditions are easy!");
+  Console.WriteLine("Read the source code for this program to learn more!"); 
 }
+
+if(2 > 5)
+{
+  Console.WriteLine("2 was greater than 5");
+}
+else if(2+2 == 5)
+{
+  Console.WriteLine("2+2 was equal to 5");
+}
+else if(4 != 4)
+{
+  Console.WriteLine("4 is NOT equal to 4");
+}
+else
+{
+  if(2*2 >= 5)
+  {
+      Console.WriteLine("2 times 2 is greater than or equal to 5");    
+  }
+  else if(true)
+  {
+    Console.WriteLine("true");
+  }
+
+  if(false == false)
+  {
+    Console.WriteLine("false is equal to false");
+  }
+}
+
+
 
 #endregion
 
@@ -42,7 +69,10 @@ switch(expression)
 }
 */
 
-int day = 4;
+Console.WriteLine("Input a number between 1 and 7");
+string inputFromConsole = Console.ReadLine();
+int day = int.Parse(inputFromConsole);
+
 switch (day) 
 {
   case 1:
@@ -67,4 +97,5 @@ switch (day)
     Console.WriteLine("Sunday");
     break;
 }
+Console.ReadLine();
 #endregion
