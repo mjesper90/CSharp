@@ -19,7 +19,7 @@ foreach(Animal animal in MyFarmAnimals){
         bool didItWork = anim.Scare();
         if(didItWork == false){
             anim.Fight();
-        }        
+        }
     }
 }
 Console.ReadLine();

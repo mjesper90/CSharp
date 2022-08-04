@@ -16,12 +16,6 @@ class Pig {
    
 }
 
-FriendlyAnimal -up-|> FriendlyAnimalInterface
-FriendlyAnimal -up-|> Animal
-Dog -up-|> FriendlyAnimal
-Pig -up-|> FriendlyAnimal
-
-
 interface FriendlyAnimalInterface {
     void : Pet()
     void : Feed()
@@ -31,6 +25,12 @@ interface HostileAnimalInterface {
     void : Fight()
     bool : Scare()
 }
+
+FriendlyAnimal -up-|> FriendlyAnimalInterface
+FriendlyAnimal -up-|> Animal
+Dog -up-|> FriendlyAnimal
+Pig -up-|> FriendlyAnimal
+
 
 @enduml
 
