@@ -24,16 +24,3 @@ foreach(Animal animal in MyFarmAnimals){
 }
 Console.ReadLine();
 
-/* Inheritance and interfaces assignment!
-*
-*   Create a "FriendlyAnimal" Class that should inherit from "Animal"
-*   Refactor the Pig/Dog class to inherit from FriendlyAnimal
-*   FriendlyAnimal must implement FriendlyAnimalInterface
-*
-*   Create a "HostileAnimal" Class that inherits from "Animal"
-*   Create a Lion and an Alligator class that inherits from HostileAnimal
-*   HostileAnimal must implement the HostileAnimalInterface
-*
-*   See the "CurrentDesign" and "FinishedDesign" files!
-*
-*/

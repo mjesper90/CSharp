@@ -1,0 +1,77 @@
+@startuml
+
+class MonoBehaviour {
+    + Transform transform
+    + Start()
+    + Update()
+}
+
+class Transform {
+    - Vector3 position
+}
+
+class Vector3 {
+    + float x
+    + float y
+    + float z
+}
+
+class Animal {
+    void : PlayAnimalSound() 
+    void : Launch(Vector3 direction, float amount)
+}
+
+class Dog {
+   
+}
+
+class Pig {
+   
+}
+
+class FriendlyAnimal {
+
+}
+
+class HostileAnimal {
+
+}
+
+class Lion {
+
+}
+
+Class Alligator {
+
+}
+
+
+interface FriendlyAnimalInterface {
+    void : Pet()
+    void : Feed()
+}
+
+interface HostileAnimalInterface {
+    void : Fight()
+    bool : Scare()
+}
+
+
+
+FriendlyAnimal -up-|> Animal
+FriendlyAnimal -up-|> FriendlyAnimalInterface
+Dog -up-|> FriendlyAnimal
+Pig -up-|> FriendlyAnimal
+
+HostileAnimal -up-|> Animal
+HostileAnimal -up-|> HostileAnimalInterface
+Lion -up-|> HostileAnimal
+Alligator -up-|> HostileAnimal
+
+Animal -up-|> MonoBehaviour
+MonoBehaviour -right-> Transform
+Transform -right-> Vector3
+Animal -up-> Vector3
+
+@enduml
+

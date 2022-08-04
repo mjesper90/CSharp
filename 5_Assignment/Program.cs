@@ -1,36 +1,19 @@
-﻿#region Assignment
+﻿//Un-comment below code and fix the issues
+//Push to github
 
-//Create a CarDealer program
-//The CarDealer must have a list of available cars for sale
-//The CarDealer must have public Buy/Sell methods
-//These methods must be accessiable via console input/output
-//These methods must change the car dealers available cars
-//Make use of atleast 3 classes.
-//Remember, Classes are usually nouns (navneord, en/et foran), f.x.:
-//Car, CarDealer, Engine, Person
-//Where as methods usually describes verbs (udsagnsord, at/jeg foran)
-//Buy, Sell, Accelerate, Move
-
-
-/* Suggestion to get started on user interaction in the console
-
-while(true){
-
-    Console.WriteLine("Write an action [buy, sell, exit]");
-    string input = Console.ReadLine();
-
-    switch (input)
-    {
-        case "buy":
-            break;
-        case "sell":
-            break;
-        case "exit":
-            return;
-        default:
-            return;
+/*
+int RecursiveFibonacci(int first, int second, int count)
+{
+    count--;
+    
+    if(count == 0) {
+        
+    }else{
+        return RecursiveFibonacci(?, ?, ?);
     }
 }
 
+int lastFibo = RecursiveFibonacci(1,1,5);
+Console.WriteLine("Last fibo number was " + lastFibo);
+Console.ReadLine(); 
 */
-#endregion
