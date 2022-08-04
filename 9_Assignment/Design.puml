@@ -2,12 +2,14 @@
 
 class MonoBehaviour {
     + Transform transform
-    + Start()
-    + Update()
+    + void : Start()
+    + void : Update()
 }
 
 class Transform {
     - Vector3 position
+    + Vector3 : GetPosition()
+    + void : AddForce(Vector3 force)
 }
 
 class Vector3 {
@@ -16,9 +18,9 @@ class Vector3 {
     + float z
 }
 
-class Animal {
+abstract Animal {
     void : PlayAnimalSound() 
-    void : Launch(Vector3 direction, float amount)
+    
 }
 
 class Dog {
@@ -29,11 +31,11 @@ class Pig {
    
 }
 
-class FriendlyAnimal {
+abstract FriendlyAnimal {
 
 }
 
-class HostileAnimal {
+abstract HostileAnimal {
 
 }
 
@@ -45,7 +47,6 @@ Class Alligator {
 
 }
 
-
 interface FriendlyAnimalInterface {
     void : Pet()
     void : Feed()
@@ -54,6 +55,7 @@ interface FriendlyAnimalInterface {
 interface HostileAnimalInterface {
     void : Fight()
     bool : Scare()
+    void : Launch(Vector3 direction, float amount)
 }
 
 
@@ -70,8 +72,8 @@ Alligator -up-|> HostileAnimal
 
 Animal -up-|> MonoBehaviour
 MonoBehaviour -right-> Transform
-Transform -right-> Vector3
-Animal -up-> Vector3
+Transform --> Vector3
+HostileAnimalInterface -up-> Vector3
 
 @enduml
 

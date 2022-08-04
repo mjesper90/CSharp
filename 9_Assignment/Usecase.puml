@@ -1,0 +1,22 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Player
+actor Animal
+actor HostileAnimal 
+actor FriendlyAnimal 
+
+rectangle HostileAnimals {
+  Player -- (Launches)  
+  (Launches) -- HostileAnimal
+}
+rectangle FriendlyAnimals {
+  Player -- (pets)
+  Player -- (feeds)
+  (feeds) -- FriendlyAnimal
+  (pets) -- FriendlyAnimal
+}
+
+HostileAnimal -left-|> Animal
+FriendlyAnimal --|> Animal
+@enduml
