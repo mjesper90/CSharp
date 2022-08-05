@@ -59,7 +59,6 @@ Requirements must abide to the following:
 
 # MuSCoW prioritized requirements
 
-
  * The player must be able choose between different hostile animals to launch
  * The player must be able to launch a hostile animal with a variable amount of force in a 3-dimensional direction
  * The animals must not suffer any harm!
