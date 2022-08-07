@@ -12,11 +12,14 @@ foreach (Animal animal in MyFarmAnimals)
 
 foreach (Animal animal in MyFarmAnimals)
 {
-    if (animal is FriendlyAnimalInterface)
+    if (animal is FriendlyAnimal)
     {
-        FriendlyAnimalInterface friendlyAnimal = (FriendlyAnimalInterface)animal;
-        friendlyAnimal.Feed();
-        friendlyAnimal.Pet();
+        FriendlyAnimal friendlyAnimal = animal as FriendlyAnimal;
+        if(friendlyAnimal != null){
+            friendlyAnimal.Feed();
+            friendlyAnimal.Pet();
+        }
+        
     }
     if (animal is HostileAnimalInterface)
     {
@@ -28,5 +31,6 @@ foreach (Animal animal in MyFarmAnimals)
         }
     }
 }
+
 Console.ReadLine();
 

@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/6_ObjectOrientedContinued.csproj",
+                "${workspaceFolder}/8_ObjectOrientedContinued.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/6_ObjectOrientedContinued.csproj",
+                "${workspaceFolder}/8_ObjectOrientedContinued.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/6_ObjectOrientedContinued.csproj"
+                "${workspaceFolder}/8_ObjectOrientedContinued.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

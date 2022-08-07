@@ -8,9 +8,9 @@ Console.ReadKey();
 class Car{
     #region Fields
     
-    string Brand = ""; 
-    float Speed = 0f;
-    int CurrentGear = 0;
+    public string Brand = ""; 
+    private float Speed = 0f;
+    protected int CurrentGear = 0;
     
     List<Door> Doors = new List<Door>();
     List<Tire> Tires = new List<Tire>();

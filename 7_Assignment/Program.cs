@@ -6,9 +6,11 @@
 //These methods must be accessiable via console input/output
 //These methods must change the car dealers available cars
 //Make use of atleast 3 classes.
-//Remember, Classes are usually nouns (navneord, en/et foran), f.x.:
+//Classes are usually nouns (navneord, en/et foran), f.x.:
 //Car, CarDealer, Engine, Person
-//Where as methods usually describes verbs (udsagnsord, at/jeg foran)
+//Make use of atleast 6 methods
+//2 of these methods must use paramaters
+//Methods usually describes verbs (udsagnsord, at/jeg foran)
 //Buy, Sell, Accelerate, Move
 
 

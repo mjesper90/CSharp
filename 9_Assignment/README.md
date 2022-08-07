@@ -14,6 +14,7 @@
   - [Usecase diagram](#usecase-diagram)
   - [MuSCoW prioritized requirements](#muscow-prioritized-requirements)
 - [Software Design](#software-design)
+- [Plan Template](#plan-template)
 - [Your assignment](#your-assignment)
 
 # Methods
@@ -24,7 +25,11 @@ There exists many approaches to "lifecycles" in software, two of the most famous
 
 [List of other SDLC's](https://www.tutorialspoint.com/sdlc/)
 
+### Agile and Water fall
 ![AgileAndWaterfall](Media/AgileAndWaterfall.jpg)
+
+### Unified process
+![UnifiedProcess](Media/UP.png)
 
 ### Waterfall
 
@@ -97,7 +102,7 @@ Requirements must abide to the following:
 ## MuSCoW prioritized requirements
 
  * The player must be able choose between different hostile animals to launch
- * The player must be able to launch a hostile animal with a variable amount of force in a 3-dimensional direction
+ * The player must be able to launch a hostile animal with a variable amount of force
  * The animals must not suffer any harm!
  * The player should be able catch the animal after launch
  * The player could be able to relaunch again to move around on a map
@@ -107,11 +112,54 @@ Requirements must abide to the following:
 
 ![Design](Design.png)
 
+
+# Plan Template
+
+## Sprint 1 (09/08/2022 - 09/09/2022)
+
+### Requirements
+
+ * The player must be able to launch a hostile animal with a variable amount of force
+ * The animals must not suffer any harm!
+
+### Design and implement
+
+![SimpleDesign](Media/SimpleDesign.png)
+
+### Tests
+
+ * Test 1
+   * Instructions
+     * Click on the wolf and hold 
+     * Drag the wolf ontop of the launcher
+     * Let go of mouse button
+   * Acceptance criteria
+     * Wolf is sent flying when it touches the launcher.
+     * Wolf is not harmed
+
+### Review
+
+## Sprint 2 (dd/mm/yyyy - dd/mm/yyyy)
+
+### Requirements
+
+### Design and implement
+
+### Test
+
+## Sprint 3 (dd/mm/yyyy - dd/mm/yyyy)
+
+### Requirements
+
+### Design and implement
+
+### Test
+
 # Your assignment
 
 Based on earlier lessons and assignments you should by now have some of the above design already implemented. I have created an example chapter regarding requirements that could lead to the design you have implemented so far.
 
-Your job now is to to implement the rest of the design! After this assignment we will look into Unity, were we can add some graphics and animations to the program and continue working on expanding our feature set!
+Your job now is to to implement the rest of the design! After this assignment we will look into Unity, were we can add some graphics, animations and interactions to the program and continue working on our project!
 
 Changing the requirements, design and implementation to better match your own ideas is strongly encouraged!
 

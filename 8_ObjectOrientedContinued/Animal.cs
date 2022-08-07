@@ -1,6 +1,4 @@
-﻿using PretendUnity;
-
-public abstract class Animal : MonoBehaviour
+﻿public abstract class Animal 
 {
     public virtual void PlayAnimalSound() 
     {

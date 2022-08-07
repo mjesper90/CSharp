@@ -1,0 +1,23 @@
+@startuml
+
+Class MonoBehaviour {
+    void : Start()
+    void : Update()
+}
+
+class Wolf {
+
+}
+
+
+Class Launcher {
+    void : Launch(Wolf wolf)
+}
+
+
+Launcher -up-|> MonoBehaviour
+Wolf -up-|> MonoBehaviour
+
+Launcher -right-> Wolf : Launches
+
+@enduml
