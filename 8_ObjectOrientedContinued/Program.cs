@@ -4,20 +4,26 @@
 MyFarmAnimals.Add(new Dog());
 MyFarmAnimals.Add(new Pig());
 
-foreach(Animal animal in MyFarmAnimals){
+
+foreach (Animal animal in MyFarmAnimals)
+{
     animal.PlayAnimalSound();
 }
 
-foreach(Animal animal in MyFarmAnimals){
-    if(animal is FriendlyAnimalInterface){
-        FriendlyAnimalInterface friendlyAnimal = (FriendlyAnimalInterface) animal;
+foreach (Animal animal in MyFarmAnimals)
+{
+    if (animal is FriendlyAnimalInterface)
+    {
+        FriendlyAnimalInterface friendlyAnimal = (FriendlyAnimalInterface)animal;
         friendlyAnimal.Feed();
         friendlyAnimal.Pet();
     }
-    if(animal is HostileAnimalInterface){
-        HostileAnimalInterface anim = (HostileAnimalInterface) animal;
+    if (animal is HostileAnimalInterface)
+    {
+        HostileAnimalInterface anim = (HostileAnimalInterface)animal;
         bool didItWork = anim.Scare();
-        if(didItWork == false){
+        if (didItWork == false)
+        {
             anim.Fight();
         }
     }

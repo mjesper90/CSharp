@@ -17,6 +17,6 @@ rectangle FriendlyAnimals {
   (pets) -- FriendlyAnimal
 }
 
-HostileAnimal -left-|> Animal
+HostileAnimal --|> Animal
 FriendlyAnimal --|> Animal
 @enduml

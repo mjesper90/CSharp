@@ -1,22 +1,52 @@
 
 # Table of Content
 - [Table of Content](#table-of-content)
+- [Methods](#methods)
+  - [Software Development Lifecycle (SDLC)](#software-development-lifecycle-sdlc)
+    - [Waterfall](#waterfall)
+    - [Agile](#agile)
+  - [User stories](#user-stories)
+  - [Actors](#actors)
+  - [Usecases](#usecases)
+  - [MuSCoW](#muscow)
 - [Software Requirement Specification](#software-requirement-specification)
-  - [Methods](#methods)
-    - [User storie(s)](#user-stories)
-    - [Actors](#actors)
-    - [Usecases](#usecases)
-    - [MuSCoW](#muscow)
-- [MuSCoW prioritized requirements](#muscow-prioritized-requirements)
-- [Design](#design)
+  - [Actors](#actors-1)
+  - [Usecase diagram](#usecase-diagram)
+  - [MuSCoW prioritized requirements](#muscow-prioritized-requirements)
+- [Software Design](#software-design)
 - [Your assignment](#your-assignment)
-# Software Requirement Specification
 
-## Methods
+# Methods
 
-### User storie(s)
+## Software Development Lifecycle (SDLC)
 
-By telling short stories we can capture requirements of the expected program behaviour, 
+There exists many approaches to "lifecycles" in software, two of the most famous is the Agile and Waterfall.
+
+[List of other SDLC's](https://www.tutorialspoint.com/sdlc/)
+
+![AgileAndWaterfall](Media/AgileAndWaterfall.jpg)
+
+### Waterfall
+
+The Waterfall Model was the first Process Model to be introduced. It is also referred to as a linear-sequential life cycle model. It is very simple to understand and use. In a waterfall model, each phase must be completed before the next phase can begin and there is no overlapping in the phases.
+
+### Agile 
+
+Agile SDLC model is a combination of iterative and incremental process models with focus on process adaptability and customer satisfaction by rapid delivery of working software product. Agile Methods break the product into small incremental builds. These builds are provided in iterations. Each iteration typically lasts from about one to three weeks. Every iteration involves cross functional teams working simultaneously on various areas.
+
+[Agile manifesto](https://agilemanifesto.org/)
+
+* Individuals and interactions over processes and tools
+* Working software over comprehensive documentation
+* Customer collaboration over contract negotiation
+* Responding to change over following a plan
+
+![AgileSprints](Media/AgileSprints.jpeg)
+
+
+## User stories
+
+By telling short stories from the actors point of view, we can better understand expected behaviour of the program and find potential actors.
 
 “As an \<actor>, I \<Want to>, \<so that>.”
 
@@ -24,22 +54,18 @@ By telling short stories we can capture requirements of the expected program beh
 * As a farmer I want to have a way to deal with unwelcome animals so that my animals dont get eaten.
 * As an animal I want to be fed so that I dont die of hunger.
 
-### Actors
+## Actors
 
-If we go through the user stories, we can identify some actors which helps better define our project and start the design process
+If we go through the user stories, we can identify some actors which helps better define our project and start the design process.
 
- * Player/Farmer
- * Animals
- * Hostile animal
- * Friendly animal
+## Usecases
 
-### Usecases
+Another way of increasing the quality of your requirement specification is to include a use case diagram.
 
-Another way of increasing the quality of your requirement specification is to include a use case diagram
+Usecase diagrams have "actors" and "usecases" and displays how they usecases are connected.
 
-![usecase](Usecase.png)
 
-### MuSCoW 
+## MuSCoW 
  
  * Must, means that this requirement must be fulfilled! Without the "must" features, the program doesn't make sense for the user of the program.
  * Should, means that this requirement will be next in line, when all the 'musts' are done. The program isnt really ussuable without the "shoulds".
@@ -56,8 +82,19 @@ Requirements must abide to the following:
    * \<The actor> \<MuSCow> \<Requirement description>
  * Must not be duplicate
 
+# Software Requirement Specification
 
-# MuSCoW prioritized requirements
+## Actors
+
+ * Player/Farmer
+ * Animals
+ * Hostile animal
+ * Friendly animal
+
+## Usecase diagram
+![usecase](Usecase.png)
+
+## MuSCoW prioritized requirements
 
  * The player must be able choose between different hostile animals to launch
  * The player must be able to launch a hostile animal with a variable amount of force in a 3-dimensional direction
@@ -66,7 +103,7 @@ Requirements must abide to the following:
  * The player could be able to relaunch again to move around on a map
  * The player wants to use the launched animal as target practice
 
-# Design, Class diagram
+# Software Design
 
 ![Design](Design.png)
 
