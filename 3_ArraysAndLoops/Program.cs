@@ -5,7 +5,7 @@
 * Alter the examples so you better understand them
 * Create new examples which you can use in the future
 *
-* Before you run the program, try to see if you can guess 
+* Before you run the program, try to see if you can deduct 
 * what is written in the console via Line 68 in this file (the foreach loop)
 */
 #endregion
