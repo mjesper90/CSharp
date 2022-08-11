@@ -17,6 +17,7 @@
 //string ExampleString = "Example 123";
 #endregion
 
+
 #region Variables
 Console.WriteLine("What is your name?");
 
@@ -94,3 +95,14 @@ if(LearnAboutDataTypes == true){
 #endregion
 Console.WriteLine("...The end...");
 Console.ReadLine(); //Stops program from exiting until we press a key
+
+
+/* Teachers corner
+
+* Operators; +, -, /, *, %, ++, --
+
+* Casting
+int.Parse()
+Convert.ToInt32()
+(int)
+*/

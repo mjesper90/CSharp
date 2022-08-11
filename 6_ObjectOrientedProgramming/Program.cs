@@ -1,7 +1,6 @@
 ﻿/*
-* Todays work will be refactoring the Door and Tire class into their seperate files
+* Todays work will be refactoring the Car, Door and Tire class into seperate files
 * and laying the ground work for the next assignment
-* 
 */
 
 //Instantiating a Car class / Creating an object of type Car
@@ -15,11 +14,12 @@ class Car{
     #region Fields
     
     public string Brand = ""; 
-    private float Speed = 0f;
     protected int CurrentGear = 0;
+    private float _speed = 0f;
+    internal int _revolutions = 0;
     
-    List<Door> Doors = new List<Door>();
-    List<Tire> Tires = new List<Tire>();
+    public List<Door> Doors = new List<Door>();
+    public List<Tire> Tires;
 
     #endregion
 
@@ -27,6 +27,7 @@ class Car{
 
     public Car(string brandParamater){
         this.Brand = brandParamater;
+        Tires = new List<Tire>();
         //Brand = brand;
         Doors.Add(new Door());
         Doors.Add(new Door());
@@ -39,7 +40,7 @@ class Car{
     }
 
     public Car(string brandParamater, int amountOfDoors, int amountOfTires, int tireSize){
-        //Fill out the overloaded constructor
+        //Try to fill out the overloaded constructor
         Console.WriteLine("Car constructed / Instantiated");
     }
 
@@ -48,11 +49,11 @@ class Car{
     #region Methods
     
     void Break(){
-        Speed = 0f;
+        _speed = 0f;
     }
 
     void Accelerate(float forceParameter){
-        Speed = Speed + forceParameter;
+        _speed = _speed + forceParameter;
     }
     
     int ChangeGear(int amount){

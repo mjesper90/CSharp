@@ -19,7 +19,6 @@ foreach (Animal animal in MyFarmAnimals)
             friendlyAnimal.Feed();
             friendlyAnimal.Pet();
         }
-        
     }
     if (animal is HostileAnimalInterface)
     {

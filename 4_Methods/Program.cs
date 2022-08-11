@@ -1,4 +1,4 @@
-﻿/*
+﻿/* Introduction to methods/functions
 <Return type> <Name> (paramaters)
 {
     return <type>;
@@ -50,4 +50,16 @@ int ReturnedNumber = FibonacciExample(input);
 
 
 
+/* Teachers corner
 
+* Overloading of methods
+
+int haps(){
+    return 0;
+}
+
+int haps(int snaps){
+    return snaps;
+}
+
+*/

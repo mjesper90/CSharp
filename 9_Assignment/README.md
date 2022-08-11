@@ -3,8 +3,10 @@
 - [Table of Content](#table-of-content)
 - [Methods](#methods)
   - [Software Development Lifecycle (SDLC)](#software-development-lifecycle-sdlc)
+    - [Agile and Water fall](#agile-and-water-fall)
+    - [Unified process](#unified-process)
     - [Waterfall](#waterfall)
-    - [Agile](#agile)
+    - [Agile sprinting](#agile-sprinting)
   - [User stories](#user-stories)
   - [Actors](#actors)
   - [Usecases](#usecases)
@@ -15,6 +17,21 @@
   - [MuSCoW prioritized requirements](#muscow-prioritized-requirements)
 - [Software Design](#software-design)
 - [Plan Template](#plan-template)
+  - [Sprint 1 (09/08/2022 - 09/09/2022)](#sprint-1-09082022---09092022)
+    - [Requirements](#requirements)
+    - [Design and implement](#design-and-implement)
+    - [Tests](#tests)
+    - [Review](#review)
+  - [Sprint 2 (dd/mm/yyyy - dd/mm/yyyy)](#sprint-2-ddmmyyyy---ddmmyyyy)
+    - [Requirements](#requirements-1)
+    - [Design and implement](#design-and-implement-1)
+    - [Test](#test)
+    - [Review](#review-1)
+  - [Sprint 3 (dd/mm/yyyy - dd/mm/yyyy)](#sprint-3-ddmmyyyy---ddmmyyyy)
+    - [Requirements](#requirements-2)
+    - [Design and implement](#design-and-implement-2)
+    - [Test](#test-1)
+    - [Review](#review-2)
 - [Your assignment](#your-assignment)
 
 # Methods
@@ -35,7 +52,7 @@ There exists many approaches to "lifecycles" in software, two of the most famous
 
 The Waterfall Model was the first Process Model to be introduced. It is also referred to as a linear-sequential life cycle model. It is very simple to understand and use. In a waterfall model, each phase must be completed before the next phase can begin and there is no overlapping in the phases.
 
-### Agile 
+### Agile sprinting
 
 Agile SDLC model is a combination of iterative and incremental process models with focus on process adaptability and customer satisfaction by rapid delivery of working software product. Agile Methods break the product into small incremental builds. These builds are provided in iterations. Each iteration typically lasts from about one to three weeks. Every iteration involves cross functional teams working simultaneously on various areas.
 
@@ -97,7 +114,7 @@ Requirements must abide to the following:
  * Friendly animal
 
 ## Usecase diagram
-![usecase](Usecase.png)
+![usecase](RequirementsEngineering/Usecase.png)
 
 ## MuSCoW prioritized requirements
 
@@ -110,7 +127,7 @@ Requirements must abide to the following:
 
 # Software Design
 
-![Design](Design.png)
+![Design](SoftwareDesign/Design.png)
 
 
 # Plan Template
@@ -119,12 +136,15 @@ Requirements must abide to the following:
 
 ### Requirements
 
- * The player must be able to launch a hostile animal with a variable amount of force
- * The animals must not suffer any harm!
+Copy/paste result of current requirement specification based on the analysis + changes.
 
 ### Design and implement
 
-![SimpleDesign](Media/SimpleDesign.png)
+Jesper will be implementing:
+
+![SimpleDesign](SoftwareDesign//SimpleDesignSprint1.png)
+
+The full design can be found updated in the Software Design chapter.
 
 ### Tests
 
@@ -132,12 +152,23 @@ Requirements must abide to the following:
    * Instructions
      * Click on the wolf and hold 
      * Drag the wolf ontop of the launcher
-     * Let go of mouse button
+     * (Optional)Let go of mouse button
    * Acceptance criteria
      * Wolf is sent flying when it touches the launcher.
      * Wolf is not harmed
 
 ### Review
+
+Jonas reviewed the implementation, which was a perfect resseamble of the design.
+The test was easy to follow, and the acceptance criterias held.
+
+After short discussion, agreed to include addtional 'musts' for next sprint as there was plenty of time left.
+
+Requirement changes:
+ 
+ * The player could be able to relaunch again to move around on a map
+  
+  After a talk with the someone from the target audience, this requirement does not seem to be important any longer. So it's been removed. or changed? Your choice.
 
 ## Sprint 2 (dd/mm/yyyy - dd/mm/yyyy)
 
@@ -147,6 +178,8 @@ Requirements must abide to the following:
 
 ### Test
 
+### Review 
+
 ## Sprint 3 (dd/mm/yyyy - dd/mm/yyyy)
 
 ### Requirements
@@ -154,6 +187,8 @@ Requirements must abide to the following:
 ### Design and implement
 
 ### Test
+
+### Review
 
 # Your assignment
 

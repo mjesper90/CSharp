@@ -21,7 +21,6 @@ namespace PretendUnity {
 abstract Animal {
     + Transform transform 
     + void : PlayAnimalSound() 
-    
 }
 
 class Dog {

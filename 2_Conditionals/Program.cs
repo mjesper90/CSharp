@@ -41,9 +41,9 @@ else
     Console.WriteLine("true");
   }
 
-  if(false == false)
+  if(false == false && true == true)
   {
-    Console.WriteLine("false is equal to false");
+    Console.WriteLine("false is equal to false AND true is equal to true");
   }
 }
 
@@ -96,6 +96,20 @@ switch (day)
   case 7:
     Console.WriteLine("Sunday");
     break;
+  default:
+    Console.WriteLine("Mellem 1 og 7 din skovl!");
+    break;
 }
 Console.ReadLine();
 #endregion
+
+/* Teachers corner
+
+Boolean logic &&, ||
+
+if(2+2 == 3 && 3+3 == 6 || 4+4 == 8){
+    Console.WriteLine("Hvad gaar galt?");
+}
+
+*/
+

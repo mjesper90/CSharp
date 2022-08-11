@@ -13,13 +13,13 @@
 //Methods usually describes verbs (udsagnsord, at/jeg foran)
 //Buy, Sell, Accelerate, Move
 
-
 // Suggestion to get started on user interaction in the console
 /*
+
+CarDealer dealer = new CarDealer();
 while(true){
 
     Console.WriteLine("Write an action [buy, sell, exit]");
-    //CarDealer dealer = new CarDealer();
     string input = Console.ReadLine();
 
     switch (input)
