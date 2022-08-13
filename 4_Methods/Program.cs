@@ -48,6 +48,24 @@ int input = Convert.ToInt32(Console.ReadLine());
 int ReturnedNumber = FibonacciExample(input);
 
 
+//Typewriter - recursion example
+string TypeWriter(string input){
+    if(input.Length > 0){
+        string firstCharacter = input.Substring(0, 1);
+        string restOfInput = input.Remove(0, 1);
+        Console.Write(firstCharacter);
+        Thread.Sleep(50);
+        return TypeWriter(restOfInput);
+    }else{
+        return "";
+    }
+}
+
+string text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore";
+TypeWriter(text);
+Console.ReadLine(); 
+
+
 
 
 /* Teachers corner
@@ -63,3 +81,5 @@ int haps(int snaps){
 }
 
 */
+
+
