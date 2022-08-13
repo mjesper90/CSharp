@@ -4,7 +4,7 @@ Console.WriteLine("Look at the source code to learn more about conditionals!");
 string StringInputFromConsole = Console.ReadLine();
 
 bool BooleanInput = false;
-if(StringInputFromConsole == "haps")
+if(StringInputFromConsole == "haps" || StringInputFromConsole == "snaps")
 {
   BooleanInput = true;
 }
@@ -103,13 +103,4 @@ switch (day)
 Console.ReadLine();
 #endregion
 
-/* Teachers corner
-
-Boolean logic &&, ||
-
-if(2+2 == 3 && 3+3 == 6 || 4+4 == 8){
-    Console.WriteLine("Hvad gaar galt?");
-}
-
-*/
 
