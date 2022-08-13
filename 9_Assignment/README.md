@@ -7,10 +7,11 @@
     - [Unified process](#unified-process)
     - [Waterfall](#waterfall)
     - [Agile sprinting](#agile-sprinting)
-  - [User stories](#user-stories)
-  - [Actors](#actors)
-  - [Usecases](#usecases)
-  - [MuSCoW](#muscow)
+  - [Requirement analysis](#requirement-analysis)
+    - [User stories](#user-stories)
+    - [Actors](#actors)
+    - [Usecases](#usecases)
+    - [MuSCoW](#muscow)
 - [Software Requirement Specification](#software-requirement-specification)
   - [Actors](#actors-1)
   - [Usecase diagram](#usecase-diagram)
@@ -65,8 +66,9 @@ Agile SDLC model is a combination of iterative and incremental process models wi
 
 ![AgileSprints](Media/AgileSprints.jpeg)
 
+## Requirement analysis
 
-## User stories
+### User stories
 
 By telling short stories from the actors point of view, we can better understand expected behaviour of the program and find potential actors.
 
@@ -76,18 +78,18 @@ By telling short stories from the actors point of view, we can better understand
 * As a farmer I want to have a way to deal with unwelcome animals so that my animals dont get eaten.
 * As an animal I want to be fed so that I dont die of hunger.
 
-## Actors
+### Actors
 
 If we go through the user stories, we can identify some actors which helps better define our project and start the design process.
 
-## Usecases
+### Usecases
 
 Another way of increasing the quality of your requirement specification is to include a use case diagram.
 
 Usecase diagrams have "actors" and "usecases" and displays how they usecases are connected.
 
 
-## MuSCoW 
+### MuSCoW 
  
  * Must, means that this requirement must be fulfilled! Without the "must" features, the program doesn't make sense for the user of the program.
  * Should, means that this requirement will be next in line, when all the 'musts' are done. The program isnt really ussuable without the "shoulds".
@@ -142,7 +144,7 @@ Copy/paste result of current requirement specification based on the analysis + c
 
 Jesper will be implementing:
 
-![SimpleDesign](SoftwareDesign//SimpleDesignSprint1.png)
+![SimpleDesign](SoftwareDesign/SimpleDesignSprint1.png)
 
 The full design can be found updated in the Software Design chapter.
 

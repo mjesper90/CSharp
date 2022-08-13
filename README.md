@@ -40,10 +40,14 @@ string ThisIsAStringVariableWithAvalue = "This is the string variables value";
 string ThisIsAlsoAString;
 ```
 
+Addresser i hukommelsen benytter ofte hexidecimal (16-tals system)
+
+![Variables](1_Basics/Media/csharp_value_type_memory_allocation_example.png)
+
 
 ## Data types, built-ins, int, string, float, bool
 
-## Operators; +, -, /, *, %, ++, --
+## Operators; +, -, /, *, %, ++, --, +=
 
 ## Boolean logic, if, else, switch, and, or
 

@@ -1,4 +1,17 @@
-﻿#region Assignment; Write your own story
+﻿#region 
+//The "#region" can be used to 'collapse' areas of code so you can focus on the key areas
+//Comments can be done in a couple different ways, after // and multiline between /* comment */
+/*
+multi
+line
+comment
+*/
+
+//All of these functionalities is for the programmers, the compiler deletes them when creating the executable (.exe)
+//Programmers can use them to document their code and help future programmers understand their thinking.
+#endregion
+
+#region Assignment; Write your own story
 /* Todays assignment
 *   Run this program
 *   Read and understand this programs source code
@@ -16,7 +29,6 @@
 //float ExampleFloat = 123.21f;
 //string ExampleString = "Example 123";
 #endregion
-
 
 #region Variables
 Console.WriteLine("What is your name?");
@@ -92,14 +104,15 @@ if(LearnAboutDataTypes == true){
     Console.WriteLine("...");
     Console.ReadLine();
 }
-#endregion
 Console.WriteLine("...The end...");
 Console.ReadLine(); //Stops program from exiting until we press a key
+
+#endregion
 
 
 /* Teachers corner
 
-* Operators; +, -, /, *, %, ++, --
+* Operators; +, -, /, *, %, ++, --, *=, +=, -=
 
 * Casting
 int.Parse()
