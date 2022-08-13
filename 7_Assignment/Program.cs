@@ -1,6 +1,7 @@
 ﻿#region Assignment
 
 //Create a CarDealer program
+//Minimum requirements:
 //The CarDealer must have a list of available cars for sale
 //The CarDealer must have public Buy/Sell methods
 //These methods must be accessiable via console input/output
@@ -14,10 +15,11 @@
 //Methods usually describes verbs (udsagnsord, at/jeg foran)
 //Buy, Sell, Accelerate, Move
 
+
 // Suggestion to get started on user interaction in the console
 /*
 
-CarDealer dealer = new CarDealer();
+CarDealer dealer = new CarDealer(); //This class you need to create yourself!
 while(true){
 
     Console.WriteLine("Write an action [buy, sell, exit]");

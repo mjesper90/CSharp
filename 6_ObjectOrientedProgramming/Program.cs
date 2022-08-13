@@ -18,7 +18,7 @@ class Car{
     private float _speed = 0f;
     internal int _revolutions = 0;
     
-    public List<Door> Doors = new List<Door>();
+    public List<Door> Doors;
     public List<Tire> Tires;
 
     #endregion
@@ -27,15 +27,16 @@ class Car{
 
     public Car(string brandParamater){
         this.Brand = brandParamater;
-        Tires = new List<Tire>();
-        //Brand = brand;
-        Doors.Add(new Door());
-        Doors.Add(new Door());
+        this.Tires = new List<Tire>();
+        this.Doors = new List<Door>();
+        Door door1 = new Door();
+        this.Doors.Add(door1);
+        this.Doors.Add(new Door());
 
         for(int i = 0; i < 4; i++){
-            Tires.Add(new Tire(10));
+            this.Tires.Add(new Tire(10));
         }
-        GetIn(Doors[0]);
+        this.GetIn(this.Doors[0]);
         Console.WriteLine("Car constructed / Instantiated");
     }
 
@@ -52,16 +53,16 @@ class Car{
         _speed = 0f;
     }
 
-    void Accelerate(float forceParameter){
+    public void Accelerate(float forceParameter){
         _speed = _speed + forceParameter;
     }
     
-    int ChangeGear(int amount){
+    public int ChangeGear(int amount){
         CurrentGear += amount;
         return CurrentGear;
     }
 
-    void GetIn(Door doorParameter){
+    private void GetIn(Door doorParameter){
         doorParameter.Open();
         Console.WriteLine("Got inside " + Brand);
         doorParameter.Close();
@@ -74,30 +75,34 @@ class Car{
 
 class Door{
 
-    bool IsOpen = false;
+    bool IsOpen;
+
+    public Door(){
+        this.IsOpen = false;
+    }
 
     public void Open(){
-        if(IsOpen == true){
+        if(this.IsOpen == true){
             Console.WriteLine("Door already open");
         }else{
             Console.WriteLine("Door opened");
-            IsOpen = true;
+            this.IsOpen = true;
         }
     }
 
     public void Close(){
-        if(IsOpen == false){
+        if(this.IsOpen == false){
             Console.WriteLine("Door already is close");
         }else{
             Console.WriteLine("Door closed");
-            IsOpen = false;
+            this.IsOpen = false;
         }
     }
 }
 
 class Tire{
     public int Size = 0;
-    public Tire(int size){
+    public Tire(int size = 10){
         this.Size = size;
     }
 }
