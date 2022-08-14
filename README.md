@@ -9,9 +9,8 @@
   - [Methods](#methods)
     - [Return](#return)
     - [Parameters/Arguments](#parametersarguments)
-    - [Scope](#scope)
   - [Classes and OOP](#classes-and-oop)
-    - [Scope](#scope-1)
+    - [Scope](#scope)
     - [Static](#static)
     - [Constructors](#constructors)
     - [Objects](#objects)
@@ -62,8 +61,6 @@ Addresser i hukommelsen benytter ofte hexidecimal (16-tals system)
 ### Return
 
 ### Parameters/Arguments
-
-### Scope
 
 ## Classes and OOP
 

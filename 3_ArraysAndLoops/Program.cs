@@ -9,6 +9,7 @@
 * what is written in the console via Line 68 in this file (the foreach loop)
 */
 #endregion
+
 #region Arrays
 string[] stringArr = new string[2];
 Console.WriteLine("Length of string array is = " + stringArr.Length);
