@@ -4,17 +4,18 @@
 - [Methods](#methods)
   - [Software Development Lifecycle (SDLC)](#software-development-lifecycle-sdlc)
     - [Agile and Water fall](#agile-and-water-fall)
-    - [Unified process](#unified-process)
     - [Waterfall](#waterfall)
     - [Agile sprinting](#agile-sprinting)
+    - [Unified process](#unified-process)
   - [Requirement analysis](#requirement-analysis)
     - [User stories](#user-stories)
-    - [Actors](#actors)
+    - [Actor table](#actor-table)
     - [Usecases](#usecases)
+      - [Usecase example](#usecase-example)
+  - [Usecase diagram](#usecase-diagram)
     - [MuSCoW](#muscow)
 - [Software Requirement Specification](#software-requirement-specification)
-  - [Actors](#actors-1)
-  - [Usecase diagram](#usecase-diagram)
+  - [Actors](#actors)
   - [MuSCoW prioritized requirements](#muscow-prioritized-requirements)
 - [Software Design](#software-design)
 - [Plan Template](#plan-template)
@@ -46,9 +47,6 @@ There exists many approaches to "lifecycles" in software, two of the most famous
 ### Agile and Water fall
 ![AgileAndWaterfall](Media/AgileAndWaterfall.jpg)
 
-### Unified process
-![UnifiedProcess](Media/UP.png)
-
 ### Waterfall
 
 The Waterfall Model was the first Process Model to be introduced. It is also referred to as a linear-sequential life cycle model. It is very simple to understand and use. In a waterfall model, each phase must be completed before the next phase can begin and there is no overlapping in the phases.
@@ -66,11 +64,15 @@ Agile SDLC model is a combination of iterative and incremental process models wi
 
 ![AgileSprints](Media/AgileSprints.jpeg)
 
+
+### Unified process
+![UnifiedProcess](Media/UP.png)
+
 ## Requirement analysis
 
 ### User stories
 
-By telling short stories from the actors point of view, we can better understand expected behaviour of the program and find potential actors.
+By telling short stories from an actors point of view, we can better understand expected behaviour of the program and describe potential actors.
 
 “As an \<actor>, I \<Want to>, \<so that>.”
 
@@ -78,15 +80,29 @@ By telling short stories from the actors point of view, we can better understand
 * As a farmer I want to have a way to deal with unwelcome animals so that my animals dont get eaten.
 * As an animal I want to be fed so that I dont die of hunger.
 
-### Actors
+### Actor table
 
-If we go through the user stories, we can identify some actors which helps better define our project and start the design process.
+| Id | Actor | Description |
+| --- | --- | --- |
+| A1 | Player | The player of the game, which inputs commands to the program |
+| A2 | Animal | The players friendly animals |
 
 ### Usecases
 
 Another way of increasing the quality of your requirement specification is to include a use case diagram.
 
-Usecase diagrams have "actors" and "usecases" and displays how they usecases are connected.
+Usecase diagrams have "actors" and "usecases" which displays how their interaction is connected.
+
+#### Usecase example
+
+| Id | Title | Actors | Sunshine | Alternate |
+| --- | --- | --- | --- | --- |
+| UC1 | Player feeds animal | Player, Animal | The player clicks on one of his/hers animals to feed it. | The animal is not hungry |
+| UC2 | ... | ... | ... | ... |
+| UC3 | ... | ... | ... | ... |
+
+## Usecase diagram
+![usecase](RequirementsEngineering/Usecase.png)
 
 
 ### MuSCoW 
@@ -115,8 +131,6 @@ Requirements must abide to the following:
  * Hostile animal
  * Friendly animal
 
-## Usecase diagram
-![usecase](RequirementsEngineering/Usecase.png)
 
 ## MuSCoW prioritized requirements
 
@@ -161,8 +175,9 @@ The full design can be found updated in the Software Design chapter.
 
 ### Review
 
-Jonas reviewed the implementation, which was a perfect resseamble of the design.
-The test was easy to follow, and the acceptance criterias held.
+Design matched code, no need for action.
+
+The test(s) was easy to follow, and the acceptance criterias held. No need for action.
 
 After short discussion, agreed to include addtional 'musts' for next sprint as there was plenty of time left.
 
