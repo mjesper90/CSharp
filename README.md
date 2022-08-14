@@ -97,5 +97,6 @@ Addresser i hukommelsen benytter ofte hexidecimal (16-tals system)
 
 https://www.w3schools.com/cs/index.php
 
-https://dotnet.microsoft.com/en-us/learn/csharp
+https://www.youtube.com/c/Brackeys/playlists (C# playliste 8 afsnit af ca. 15 minutter)
 
+https://dotnet.microsoft.com/en-us/learn/csharp

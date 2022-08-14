@@ -1,6 +1,6 @@
 ﻿#region Introduction to methods/functions
 
-/* Syntax
+/* Structure
 <Return type> <Name> (paramaters)
 {
     return <type>;
@@ -20,7 +20,7 @@ Console.WriteLine("The calculated sum from the method was " + Sum(123,321));
 void HelloMethod(string message)
 {
     Console.WriteLine(message);
-    return;
+    return; //This line is not really needed
 };
 
 HelloMethod("This string matches the methods parameter input!");
@@ -74,19 +74,28 @@ Console.ReadLine();
 
 #endregion
 
+#region method overloading
+MethodOverloadExample example = new MethodOverloadExample();
+example.print();
+example.print("hej");
+example.print(1);
+example.print(1.0f);
 
-/* Teachers corner
+class MethodOverloadExample{
+    public void print(){
+        Console.WriteLine("Print empty");
+    }
 
-* Overloading of methods
+    public void print(string msg){
+        Console.WriteLine(msg);
+    }
 
-int haps(){
-    return 0;
-}
+    public void print(int number){
+        Console.WriteLine(number);
+    }
 
-int haps(int snaps){
-    return snaps;
-}
-
-*/
-
-
+    public void print(float number){
+        Console.WriteLine(number);
+    }
+};
+#endregion

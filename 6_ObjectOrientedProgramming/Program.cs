@@ -75,7 +75,7 @@ class Car{
 
 class Door{
 
-    bool IsOpen;
+    private bool IsOpen;
 
     public Door(){
         this.IsOpen = false;
