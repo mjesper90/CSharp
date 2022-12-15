@@ -12,12 +12,14 @@ class CarDealer{
 class Car{
     +float Price
     +CarType TypeOfCar
+    -bool _engineOn = false
     -float _speed;
+    -string _description 
     --
-    +Car()
-    +Car(float price)
-    +Car(CarType carType)
-    +Car(float price, CarType carType)
+    +Car(string description)
+    +Car(string description, float price)
+    +Car(string description, CarType carType)
+    +Car(string description, float price, CarType carType)
     --
     +{static} Car : RandomizeCar(Car car)
     +string : ToString()
