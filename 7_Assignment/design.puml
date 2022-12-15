@@ -1,0 +1,60 @@
+@startuml
+
+class CarDealer{
+    +List<Car> Cars
+    -float _cash
+    +CarDealer()
+    +Car : Buy(Car car)
+    +float : Sell(Car car)
+    +void : ShowOffCars()
+}
+
+class Car{
+    +float Price
+    +CarType TypeOfCar
+    -float _speed;
+    --
+    +Car()
+    +Car(float price)
+    +Car(CarType carType)
+    +Car(float price, CarType carType)
+    --
+    +{static} Car : RandomizeCar(Car car)
+    +string : ToString()
+    +void : StartEngine()
+    +void : Accelerate()
+}
+
+enum CarType{
+    ELECTRIC,
+    FUSSION,
+    STEAM,
+}
+
+class Person{
+    -List<Car> _myCars
+    -float _cash
+    +Person()
+}
+
+class Engine{
+    +float Price
+    +int HorsePower
+    -List<Piston> _pistons
+    +Engine(float price, int horsePower)
+    +void : Ignition()
+}
+
+class Piston{
+    +float Depth
+    +void Ignite()
+}
+
+Person --> CarDealer : "Buys/Sells"
+CarDealer o-- Car
+Person o-- Car
+Car *-- CarType
+Car *-- Engine
+Engine *-- Piston
+
+@enduml
